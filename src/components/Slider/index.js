@@ -1,8 +1,15 @@
 import React from "react"
 import './styles.css'
 
+import { useInView } from "react-intersection-observer"
+
 const Slider = ({imageSrc, title, subtitle, flipped }) => { //flipped dira se a imagem estara a esquerda ou a direita
     
+        const { ref, inView } = useInView({
+         /* Optional options */
+            threshold: 0.4,
+        });
+
         const renderContent = () => {
             if(!flipped){
                 return (
@@ -28,7 +35,9 @@ const Slider = ({imageSrc, title, subtitle, flipped }) => { //flipped dira se a 
         }
     
     return(
-        <div className="slider">{renderContent()}</div>
+        <div className={inView ? "slider slider--zoom" : "slider"} ref={ref}>
+            {renderContent()}
+        </div>
     )
 }
 
