@@ -14,6 +14,7 @@
   
   .navbar__logo {
     color: white;
+    cursor:pointer;
     font-family: "MonteCarlo", cursive;
     font-size: 2.5rem;
   }
