@@ -1,15 +1,23 @@
 import './App.css';
-
-import Hero from './components/Hero'
-import Slider from './components/Slider'
-
 import travel_01 from "./assets/travel-01.jpg"
 import travel_02 from "./assets/travel-02.jpg"
 import travel_03 from "./assets/travel-03.jpg"
 
+
+import Hero from './components/Hero'
+import Slider from './components/Slider'
+import Navbar from './components/Navbar'
+
+const navbarLinks = [
+  { url: "#", title: "Home"},
+  { url: "#", title: "Rotas"},
+  { url: "#", title: "Recompensas"}
+]
+
 function App() {
   return (
     <div className="App">
+      <Navbar navbarLinks={navbarLinks}/>
       <Hero imageSrc={travel_03}/>
       <Slider 
       imageSrc={travel_02} 
