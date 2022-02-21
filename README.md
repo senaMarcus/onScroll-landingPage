@@ -53,7 +53,7 @@ $ npm start
 
 ## 💻 Project
 
-That's an amazing landing page! Project link: https://on-scroll-landing-page.vercel.app/
+That's an amazing landing page! visit the Project with the link: https://on-scroll-landing-page.vercel.app/
 
 ## 📝 License
 
