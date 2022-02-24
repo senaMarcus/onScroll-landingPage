@@ -5,7 +5,7 @@ import "./styles.css"
     return(
         <div className="hero">
             <img src={imageSrc} alt="Travel" className="hero__image" />
-            <h1 className="hero__title">Viagem simplificada.</h1> 
+            <h1 className="hero__title">Viagem simples.</h1> 
         </div>
     )
 }
